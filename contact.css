@@ -126,6 +126,7 @@ section{
     width: 97%;
     height: 93.2vh;
     margin: 0 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,50 +135,20 @@ section{
     backdrop-filter: blur(40px);
 }
 
-section img{
-    width: 242.5px;
-    height: 63.5px;
-    filter: drop-shadow(8px 8px 10px #000);
+section h1{
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    text-decoration: underline;
 }
 
-section .materials{
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-section .materials h1{
-    color: #fff;
-    font-size: 70px;
-    text-shadow: 2px 2px 4px #000;
-}
-section .materials h4{
+section ul li{
     color: #fff;
     text-align: center;
-    padding-bottom: 20px;
+    font-size: large;
+    font-weight: 500;
+    padding-bottom: 10px;
     text-shadow: 2px 2px 4px #000;
-}
-section .materials a{
-    width: 150px;
-    padding: 10px 15px;
-    color: #fff;
-    text-align: center;
-    font-size: medium;
-    font-weight: 600;
-    background: #ac7809;
-    border: 1px solid #fff;
-    border-radius: 9px;
-    text-decoration: none;
-    transition: ease 0.3s;
-}
-section .materials a:hover{
-    color: #000;
-    background: #fff;
-    transform: scale(1.05);
-}
-section .materials a:visited{
-    text-decoration: none;
-    color: no-change;
+    list-style: none;
 }

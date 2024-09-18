@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding-top: 70px;
+    background: #c2880a;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/home.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.logo{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.logo h1 img{
+    width: 36.18px;
+    height: 39.36px;
+    border-radius: 5px;
+}
+
+nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #004274; */
+    height: 70px;
+    border-bottom: 1.5px solid #fff;
+    backdrop-filter: blur(50px);
+    z-index: 9999;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 18px;
+}
+nav ul li a:hover, 
+nav ul li a.active{
+    background: #ac7809;
+    color: #fff;
+}
+
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #c2880a;
+        border-bottom: 1.5px solid #fff;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        width: 100%;
+        padding: 15px;
+    }
+    nav ul li.dark{
+        width: 100%;
+        padding: 15px;
+        background: #ac7809;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+section{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+section .chatbot{
+    height: 80vh;
+    width: 600px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 1.5px solid #fff;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+}
+.chatbot form{
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 40px;
+}
+.chatbot form input{
+    font-size: medium;
+    width: 90%;
+    outline: none;
+    border: none;
+}
+.chatbot form button{
+    width: 8%;
+    text-align: center;
+    font-size: larger;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+section .manual-ticket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    margin: 10px;
+}
+
+.manual-ticket .museum{
+    width: 100%;
+    min-height: 46vh;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+}
+.manual-ticket .museum img{
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+}
+.manual-ticket .museum h3{
+    color: #fff;
+    text-align: center;
+}
+.manual-ticket .museum button{
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    color: #fff;
+    font-size: medium;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    background: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.manual-ticket .museum button:hover{
+    background: #fff;
+    color: #000;
+}
+.manual-ticket .museum button a{
+    width: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: ease 0.3s;
+}
+.manual-ticket .museum button a:hover{
+    color: #000;
+}
+.manual-ticket .museum button a:visited{
+    text-decoration: none;
+    color: no-change;
+}
+.manual-ticket .ticketing{
+    width: 100%;
+    min-height: 30vh;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #fff;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+}
+.manual-ticket .ticketing .search{
+    width: 90%;
+    /* background: #fff; */
+    /* margin: 15px;
+    padding: 15px;
+    border-radius: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.manual-ticket .ticketing .search.active-popup{
+    transform: scale(0);
+}
+.manual-ticket .ticketing .search .search-bar{
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.manual-ticket .ticketing .search .search-bar input{
+    font-size: medium;
+    width: 90%;
+    outline: none;
+    border: none;
+}
+.manual-ticket .ticketing .search .search-bar button{
+    width: 8%;
+    text-align: center;
+    font-size: larger;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer; 
+}
+.manual-ticket .ticketing .search p{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+.manual-ticket .ticketing .search p span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.manual-ticket .ticketing form{
+    position: absolute;
+    width: 100%;
+    min-height: 30vh;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    transition: 0.3s ease;
+    border: 1.5px solid #fff;
+    transform: scale(0);
+}
+.manual-ticket .ticketing form.active-popup{
+    margin: 15px;
+    min-height: 30vh;
+    background: #ac7809;
+    /* backdrop-filter: blur(300px); */
+    transform: scale(1);
+}
+.manual-ticket .ticketing form .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* padding: 15px; */
+    margin: 10px 0;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.manual-ticket .ticketing form .info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.manual-ticket .ticketing form p{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+.manual-ticket .ticketing form p input{
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+.manual-ticket .ticketing form button{
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    padding: 15px;
+    color: #fff;
+    font-size: medium;
+    font-weight: 600;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    background: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.manual-ticket .ticketing form button a{
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.manual-ticket .ticketing form button a:visited{
+    color: no-change;
+    text-decoration: none;
+}
+.manual-ticket .ticketing form button a:hover{
+    color: #000;
+}
+.manual-ticket .ticketing form button:hover{
+    background: #fff;
+    color: #000;
+}
+.manual-ticket .ticketing form .info .number-of-tickets{
+    margin-bottom: 10px;
+}
+.manual-ticket .ticketing form .info .number-of-tickets .wrapper{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.manual-ticket .ticketing form .info .number-of-tickets .wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+.manual-ticket .ticketing form .info .number-of-tickets .wrapper span.num{
+    font-size: small;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.manual-ticket .ticketing form .info .rate{
+    margin-top: 25px;
+}
+.manual-ticket .ticketing form .info .rate .MRP{
+    font-size: x-large;
+    border-bottom: 2px solid #fff;
+}

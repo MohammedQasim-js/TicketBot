@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ticketing.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <title>Ticket Bot</title>
+</head>
+<body>
+
+    <div class="bg"></div>
+    <nav>
+        <div class="logo">
+            <h1><img src="images/logo.jpg" alt="Ticket" href="index.html">TicketBot</h1>
+        </div>
+        <ul id="menuList">
+            <li class="dark"><a href="index.html">Home</a></li>
+            <li><a href="ticketing.html" class="active">Ticketing</a></li>
+            <li class="dark"><a href="about.html">About</a></li>
+            <li><a href="services.html">Description</a></li>
+            <li class="dark"><a href="contact.html">Contact</a></li> 
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <section>
+        <div class="chatbot">
+            <form action="">
+                <input type="text" id="" placeholder="Book a Ticket">
+                <button><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <div class="manual-ticket">
+            <div class="museum">
+                <img src="images/museum1.jpg" alt="Chhatrapati Shivaji Maharaj Vastu Sangrahalaya">
+                <h3>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</h3>
+                <button><a href="https://maps.app.goo.gl/upeJrvthiMjs8sZP9">Open in Map</a></button>
+            </div>
+            <div class="ticketing">
+                <div class="search">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for more Museums here...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <br>
+                    <p>Already know where to go, <span class="btnLogin-pop">click here</span> for manual ticketing</p>
+                </div>
+                <form action="" class="wrapper2">
+                    <span class="icon-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <div class="info">
+                        <div class="NDT">
+                            <p>Name : <input type="text" placeholder="Name"></p>
+                            <p>Date : <input type="date" name="" id=""></p>
+                            <p>Time : <input type="time" name="" id=""></p>
+                        </div>
+                        <div class="TR">
+                            <div class="number-of-tickets">
+                                <p>No. of Tickets :</p>
+                                <div class="wrapper">
+                                    <span class="minus">-</span>
+                                    <span class="num">01</span>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <p>Rate :</p>
+                                <p class="MRP"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price">350</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button><a href="payment.html">Book Ticket</a></button>
+                </form>
+            </div>
+        </div>    
+    </section>
+
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/499c0903c7.js" crossorigin="anonymous"></script>
+</body>
+</html>
